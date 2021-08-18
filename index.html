@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>IWP</title>
+    </head>
+</html>
+<body>
+    <div class="form">
+        <div class="mainform">
+            <h1> Personal Details Form </h1>
+            <form method="get">
+
+                <h3> 1) What is your name? </h3>
+                <input type="text" placeholder="First Name" name="name" required> <input type="text" placeholder="Last Name" name="name" required>
+                <br>
+
+                <h3> 2) How old are you? </h3>
+                <label for="age1">
+                    <input id="age1" type="radio" name="age" value="Below 20" checked> Below 20
+                </label><br>
+                <label for="age2">
+                    <input id="age2" type="radio" name="age" value="20 to 30"> 20 to 30
+                </label><br>
+                <label for="age3">
+                    <input id="age3" type="radio" name="age" value="Above 30"> Above 30 
+                </label><br>
+
+                <h3> 3) When is your birthday? </h3>
+                <input type="date" name="date" required>
+
+                <h3> 4) What is/are your favourite fruit(s)? </h3>
+                <label for="fruit1">
+                    <input type="checkbox" id="fruit1" name="fruit" value="Apple"> Apple
+                </label><br>
+                <label for="fruit2">
+                    <input type="checkbox" id="fruit2" name="fruit" value="Banana"> Banana
+                </label><br>
+                <label for="fruit3">
+                    <input type="checkbox" id="fruit3" name="fruit" value="Strawberry"> Strawberry
+                </label><br>
+                <label for="fruit4">
+                    <input type="checkbox" id="fruit4" name="fruit" value="Watermelon"> Watermelon
+                </label><br>
+
+                <h3> 5) What is your highest degree of qualification?</h3>
+                <input type="text" list="degree" name="degree" autocomplete = "off">
+                <datalist id="degree">
+                    <option value="High School">High School Diploma</option>
+                    <option value="Bachelor's">Bachelor's Degree</option>
+                    <option value="Master's">Master's Degree</option>
+                    <option value="PhD">Doctor of Phiolsophy</option>
+                </datalist>
+
+                <h3> 6) What is your mobile number?</h3>
+                <input type="tel" pattern="[0-9]{10}" name="mobno" placeholder="Enter Your Mobile Number" required>
+
+                <h3> 7) How many hours do you sleep?</h3>
+                <label for="hours" class="left">
+                    <input type="number" id="sleep" name="sleep" placeholder="6" min="1" max="12">
+                </label>
+
+                <h3> 8) What is your favourite colour?</h3>
+                <input type="color" name="colour">
+
+                <h3> 9) Please attach your identification</h3>
+                <label for="report">
+                    <input type="file" id="report" name="report">
+                </label><br><br>
+
+                <h3> 10) Feedback</h3>
+                <textarea id="feedback" name="feedback" rows="10" cols="70" placeholder="Enter something here..."></textarea>
+
+                <button type="submit"><span>Submit</span></button>
+            </form>
+        </div>
+    </div>
+</body>
